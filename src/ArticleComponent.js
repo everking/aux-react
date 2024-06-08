@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { marked } from 'marked';
 import { Editor } from 'react-draft-wysiwyg';
 import { EditorState, convertToRaw, ContentState } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
@@ -16,7 +15,7 @@ const ArticleComponent = () => {
   const { articleId } = useParams();
 
   console.log(`Article Component articleId: ${articleId}`);
-  
+
   const getArticle = async (articleId) => {
     console.log(`GET articleId: ${articleId}`);
     try {
@@ -97,14 +96,19 @@ const ArticleComponent = () => {
     }
   }
 
+  const customStyleMap = {
+    CUSTOM_FONT: { fontFamily: 'Avenir, sans-serif' },
+  };
+
   return (
-    <div>
+    <div className='prose'>
       { editMode ? (
           <Editor
           editorState={editorState}
           wrapperClassName="demo-wrapper"
           editorClassName="demo-editor"
           onEditorStateChange={onEditorStateChange}
+          customStyleMap={customStyleMap}
           />
         ) : (<Article />)
       }

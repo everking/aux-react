@@ -12,11 +12,14 @@ function App() {
     <div className="App">
       <Router>
         <MegaMenu currentMenuItem={currentMenuItem} setCurrentMenuItem={setCurrentMenuItem} />
-        <Routes>
-          <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />
-        </Routes>
+        <div className='flex w-full justify-center bg-blue-200'>
+          <div className='w-full max-h-full max-w-2xl bg-white p-5'>
+            <Routes>
+              <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />
+            </Routes>
+          </div>
+        </div>
       </Router>
-      <div>Current Menu Item: {currentMenuItem}</div>
     </div>
   );
 }
