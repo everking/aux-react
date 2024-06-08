@@ -1,0 +1,1684 @@
+[{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/17auQXYhn9agczwc7PoF",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "stories"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "Stories"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eCultivating Virtue: Self-Mastery with the Saints\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://tanbooks.com/products/books/cultivating-virtue-self-mastery-with-the-saints/\"\u003ehttps://tanbooks.com/products/books/cultivating-virtue-self-mastery-with-the-saints/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca target=\"pdf-view\" href=\"/pdf/self-mastery-to-self-giving-map.pdf\"\u003e\u003cimg src=\"/images/pdf.png\" style=\"height:40px;width:35px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eYouth Conversion stories\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.youtube.com/@youthopusdei/videos\" target=\"youtube-view\"\u003e\u003cimg src=\"/images/youtube.png\" style=\"width:35px;height:35px\" /\u003e https://www.youtube.com/@youthopusdei/videos\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Stories"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:10.166399Z",
+    "updateTime": "2024-06-04T07:18:10.166399Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/20jJtsh2qf9gLgjgWfBH",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "recollections"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003cp\u003eThe monthly evening of recollection is a time for personal prayer and reflection on topics to do with Christian life. The evening includes meditations preached by a priest, time for examination of conscience, opportunity for Confession or spiritual direction, and a talk given by a layman. An atmosphere of silence is maintained until after Benediction, when all may enjoy a snack and time for socializing.\u003c/p\u003e\n\u003ch3\u003eFor Men\u003c/h3\u003e\n\u003ch4\u003eSaint Joseph Catholic Church\u003c/h4\u003e\n\u003cp\u003e582 Hope St, Mountain View\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"http://www.menlough.org/evenings-of-recollection.html\"\u003ehttp://www.menlough.org/evenings-of-recollection.html\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eGarber House\u003c/h4\u003e\n\u003cp\u003e1827 Oxford Street, Berkeley, CA 94709\u003c/p\u003e\n\u003cp\u003e1st Monday of the Month\u003c/p\u003e\n\u003cp\u003e7:15 PM - 9:00 PM\u003c/p\u003e\n\u003ch3\u003eFor Women\u003c/h3\u003e\n\u003ch4\u003eCharwick Study Center\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.charwick.org/recollections\"\u003ehttps://www.charwick.org/recollections\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Recollections"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:08.249969Z",
+    "updateTime": "2024-06-04T07:18:08.249969Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/3aV27W0bxmxN5xNyt7Bp",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "counseling"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Counseling"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eCounseling\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:04.579186Z",
+    "updateTime": "2024-06-04T07:18:04.579186Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/6HnJrWvBBBrYqv4zOjQS",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "fiendship-clubs"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": ""
+      },
+      "title": {
+        "stringValue": "Friendship Clubs"
+      },
+      "excerpt": {
+        "stringValue": "Friendship Clubs"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:05.287840Z",
+    "updateTime": "2024-06-04T07:18:05.287840Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/8DCYGJ7NREzZe57H5ADb",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "0"
+      },
+      "date": {
+        "stringValue": ""
+      },
+      "coverImage": {
+        "stringValue": "/images/academic.png"
+      },
+      "articleId": {
+        "stringValue": "academic"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "whole-child"
+            },
+            {
+              "stringValue": "family"
+            },
+            {
+              "stringValue": "academic"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": ""
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eThe Importance of Being a Good Student, According To St. Josemaria\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.fairestloveshrine.org/the-importance-of-being-a-good-student-according-to-st-josemaria/\"\u003ehttps://www.fairestloveshrine.org/the-importance-of-being-a-good-student-according-to-st-josemaria/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eDisciple of Christ, Education in Virtue\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://openlightmedia.com/education-in-virtue/\"\u003ehttps://openlightmedia.com/education-in-virtue/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Academic"
+      },
+      "updated": {
+        "stringValue": ""
+      }
+    },
+    "createTime": "2024-06-04T07:18:00.692718Z",
+    "updateTime": "2024-06-04T07:18:00.692718Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/8JSzkBGMWf6yqOPMvU3l",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "ask-any-question"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eAsk\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Ask any question"
+      },
+      "excerpt": {
+        "stringValue": "Ask"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:02.747435Z",
+    "updateTime": "2024-06-04T07:18:02.747435Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/AOU1EIsShBwpZpBfGpSA",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "health"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eGetting Fit in Mind, Body, And Soul\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca target=\"_blank\" href=\"https://integratedcatholiclife.org/2024/04/hain-getting-fit-in-mind-body-and-soul-2/\"\u003ehttps://integratedcatholiclife.org/2024/04/hain-getting-fit-in-mind-body-and-soul-2/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Health"
+      },
+      "excerpt": {
+        "stringValue": "Health"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:05.998358Z",
+    "updateTime": "2024-06-04T07:18:05.998358Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/BXOwuBVBtlPopbWNR9RF",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "formation"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Formation"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eThe One Thing You Need\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://edify.us/video/the-one-thing-you-need/\"\u003ehttps://edify.us/video/the-one-thing-you-need/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Formation"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:05.530505Z",
+    "updateTime": "2024-06-04T07:18:05.530505Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/CUsMAhBXttSbRVnMfHC4",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "reading-list"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Reading Lists"
+      },
+      "excerpt": {
+        "stringValue": "Reading lists"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eAn Introduction to Philosophy for Young People\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.lifeissues.net/writers/mcm/ph/ph_01philosophyyouth1.html\" target=\"_blank\"\u003ehttps://www.lifeissues.net/writers/mcm/ph/ph_01philosophyyouth1.html\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:07.739273Z",
+    "updateTime": "2024-06-04T07:18:07.739273Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/HGSmmzQcvtpohNKx46Yo",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "prayers"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Prayers"
+      },
+      "excerpt": {
+        "stringValue": "Prayers"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eAt the School of Prayer with St. Josemaria\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://stjosemaria.org/podcasts/at-the-school-of-prayer/\"\u003ehttps://stjosemaria.org/podcasts/at-the-school-of-prayer/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eWhen Josemaría was very little, his parents and grandparents taught him short, simple prayers to say during the day.  Saint Josemaria never forgot them. He went on saying them for the rest of his life.\u003c/p\u003e\n\u003cp\u003e\u003ca target=\"pdf-view\" href=\"/pdf/escriva-chlidren-prayers.pdf\"\u003e\u003cimg src=\"/images/pdf.png\" style=\"height:40px;width:35px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:07.506256Z",
+    "updateTime": "2024-06-04T07:18:07.506256Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/MKGIrrcNGYyszw7nYdIv",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "pointers"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "Pointerst"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eThe Three Most Profound Ideas I Have Ever Had\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://integratedcatholiclife.org/2023/05/the-three-most-profound-ideas-i-have-ever-had-2/\" target=\"_blank\"\u003ehttps://integratedcatholiclife.org/2023/05/the-three-most-profound-ideas-i-have-ever-had-2/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Pointers"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:07.252930Z",
+    "updateTime": "2024-06-04T07:18:07.252930Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/MVjylW3IsNoh3OnFYS3T",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "biblical"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Bible"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eAccess the Gospel of the day and St. Josemaria&#39;s published works\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://escrivalite.com/\"\u003ehttps://escrivalite.com/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eLife-Changing Video Bible Studies\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://stpaulcenter.com/bible-studies/\"\u003ehttps://stpaulcenter.com/bible-studies/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:03.188426Z",
+    "updateTime": "2024-06-04T07:18:03.188426Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/PAM7KuXipRwoyA939kFx",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "culture"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "Culture"
+      },
+      "title": {
+        "stringValue": "Culture"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eThe Music of Christendom\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://ignatius.com/the-music-of-christendom-mocp/\"\u003ehttps://ignatius.com/the-music-of-christendom-mocp/\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:04.823735Z",
+    "updateTime": "2024-06-04T07:18:04.823735Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/PdBSvOpbUuPmPIb6sNAh",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "connect-families"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Connect with families"
+      },
+      "excerpt": {
+        "stringValue": "Connect with families"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:04.176699Z",
+    "updateTime": "2024-06-04T07:18:04.176699Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/Sb5qxprFweCiwbrzAKoP",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "corporal-works-of-mercy"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Corporal Works of Mercy"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:04.403852Z",
+    "updateTime": "2024-06-04T07:18:04.403852Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/XuGa9bbrjMxMPBAtOEbi",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "zacchaeus"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "sveltekit"
+            },
+            {
+              "stringValue": "markdown"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "The story of Zacchaeus is an icon of the spiritual life. Even the worst of us have, deep down, a hunger for God and a desire to see Jesus. When we follow the promptings of that desire, wonderful things can happen. Of course, when Jesus enters our lives, he means business: “I am coming to stay at your house this day,” he says to Zacchaeus. Christ will not be a peripheral interest, one value among many. Once we invite him in, he will be the Lord of our lives."
+      },
+      "title": {
+        "stringValue": "Zacchaeus"
+      },
+      "body": {
+        "stringValue": "\u003ciframe width=\"800\" height=\"315\" src=\"https://www.youtube.com/embed/vYH_g1Xzbeo?si=98OGWIMkLI2t0oGn\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen\u003e\u003c/iframe\u003e\n\n\n\n\u003cp\u003e\u003ca href=\"https://www.wordonfire.org/videos/sermons/zacchaeus-hurry-down/\"\u003ehttps://www.wordonfire.org/videos/sermons/zacchaeus-hurry-down/\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:10.900861Z",
+    "updateTime": "2024-06-04T07:18:10.900861Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/Y8Sh1YGw1wDzeWvO34dV",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "mentoring"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003ePreventive System of St. John Bosco (Don Bosco)\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"http://www.donboscowest.org/pedagogy/preventive-system\"\u003ehttp://www.donboscowest.org/pedagogy/preventive-system\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eParenting for Character\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://scepterpublishers.org/products/parenting-for-character?variant=41525378056369\"\u003ehttps://scepterpublishers.org/products/parenting-for-character?variant=41525378056369\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Mentoring"
+      },
+      "title": {
+        "stringValue": "Mentoring"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:06.485357Z",
+    "updateTime": "2024-06-04T07:18:06.485357Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/Z38FrjhstNoT5UfxArJ4",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "spiritual"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "family"
+            },
+            {
+              "stringValue": "whole-child"
+            },
+            {
+              "stringValue": "spiritual"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Spiritual"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eHow To Keep Your Kids Catholic: Apologetics for Kids\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://notsoformulaic.com/keep-kids-catholic-apologetics-kids\"\u003ehttps://notsoformulaic.com/keep-kids-catholic-apologetics-kids\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eStudy &amp; Prayer\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://stjosemaria.org/podcasts/podcast-study-prayer/\"\u003ehttps://stjosemaria.org/podcasts/podcast-study-prayer/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Spiritual"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:09.416428Z",
+    "updateTime": "2024-06-04T07:18:09.416428Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/c7blKIBUPP9hlFe9ipB4",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "coaching"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Coaching"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eCoaching\u003c/h3\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Coaching"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:03.649699Z",
+    "updateTime": "2024-06-04T07:18:03.649699Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/crrBcHToXwWXRAMeqRBj",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "sports-group"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Sports Group"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:09.679466Z",
+    "updateTime": "2024-06-04T07:18:09.679466Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/en8V4UYfHgb18SjzEePM",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "faith-reason"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eHow Science, Reason, and Faith Can Help Us Discover the Bible\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://www.magiscenter.com/blog/science-reason-and-faith-discover-the-bible\"\u003ehttps://www.magiscenter.com/blog/science-reason-and-faith-discover-the-bible\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Faith & Reason"
+      },
+      "excerpt": {
+        "stringValue": "Faith & Reasont"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:05.041825Z",
+    "updateTime": "2024-06-04T07:18:05.041825Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/gKkjv4noJ7bYsK6QLeEF",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "life-of-saints"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eA daily podcast bringing the Saints to life with award-winning actors, writers, and sound designers.\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.themerrybeggars.com/shows/the-saints\" target=\"_blank\"\u003ehttps://www.themerrybeggars.com/shows/the-saints\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "title": {
+        "stringValue": "Life of Saints"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:06.221255Z",
+    "updateTime": "2024-06-04T07:18:06.221255Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/h8A2FPf424bhz9KQKW6m",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "readings"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Readings"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSpark the Imagination Book List\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eFile: Spark the Imagination Book List for kids\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca target=\"pdf-view\" href=\"/pdf/spark-the-Imagination-book-list-for-kids.pdf\"\u003e\u003cimg src=\"/images/pdf.png\" style=\"height:40px;width:35px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003eBefore Austen Comes Aesop: The Children&#39;s Great Books and How to Experience Them\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://ignatius.com/before-austen-comes-aesop-bacap/\"\u003ehttps://ignatius.com/before-austen-comes-aesop-bacap/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eGuide for the Catholic Reader: Selected Reading List, Rubric, and Rationale for Catholic Education\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://cardinalnewmansociety.org/the-catholic-reader-guide-for-the-catholic-reader-selected-reading-list-rubric-and-rationale-for-catholic-education/\"\u003ehttps://cardinalnewmansociety.org/the-catholic-reader-guide-for-the-catholic-reader-selected-reading-list-rubric-and-rationale-for-catholic-education/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Readings"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:07.987161Z",
+    "updateTime": "2024-06-04T07:18:07.987161Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/kVZxoQRS9J0enSeK6ydK",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "service-projects"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "title": {
+        "stringValue": "Service Projects"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:08.883583Z",
+    "updateTime": "2024-06-04T07:18:08.883583Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/lDH9nWr75gYOkwRQ4kSB",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "ccc"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Catechism of the Catholic Church"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eDiscover the Catechism\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.realtrue.org/\"\u003ehttps://www.realtrue.org/\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.usccb.org/sites/default/files/flipbooks/catechism/\"\u003ehttps://www.usccb.org/sites/default/files/flipbooks/catechism/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Catechism of the Catholic Church"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:03.406673Z",
+    "updateTime": "2024-06-04T07:18:03.406673Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/pMRyNJclOWYJxOgXFf17",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "study-weekend"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Study weekend"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:10.402084Z",
+    "updateTime": "2024-06-04T07:18:10.402084Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/poSK5JsfzTXYDGbnEO8Y",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "movie-club"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Movie Club"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eThe Search for Man\u003c/h3\u003e\n\u003cp\u003eThe Search for Man is an instructive course on moral character, Catholic doctrine, and spiritual maturity. Our course uses outstanding movies as its primary “textbook”, employing the case-study method. \u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.searchforman.com/\" target=\"_blank\"\u003ehttps://www.searchforman.com/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:07.042968Z",
+    "updateTime": "2024-06-04T07:18:07.042968Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/qD5jPMeBR65kd7sJt5oG",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "bible-study"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Bible Study"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eResources\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://focusequip.org/bible-study-resources/\" target=\"_blank\"\u003ehttps://focusequip.org/bible-study-resources/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Bible study"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:02.925139Z",
+    "updateTime": "2024-06-04T07:18:02.925139Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/slSVQ7KJUFqtuGvrz1EM",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "spiritual-works-of-mercy"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "title": {
+        "stringValue": "Spiritual Works of Mercy"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:09.159073Z",
+    "updateTime": "2024-06-04T07:18:09.159073Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/spiritual",
+    "fields": {
+      "body": {
+        "stringValue": "this is the body"
+      }
+    },
+    "createTime": "2024-06-08T17:40:19.681398Z",
+    "updateTime": "2024-06-08T17:40:19.681398Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/tqbsgMae0njB5VOH7UWv",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "virtues"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Virtues"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eWhat are the Virtues?\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://openlightmedia.com/interactive-virtue-tree/\"\u003ehttps://openlightmedia.com/interactive-virtue-tree/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eGrow in Virtues\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://stjosemaria.org/podcast-library/#jc_prod_cat=.virtues\"\u003ehttps://stjosemaria.org/podcast-library/#jc_prod_cat=.virtues\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eA Plan of Life\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://scepterpublishers.org/products/a-plan-of-life?_pos=1&_sid=79b6dfbae&_ss=r\"\u003ehttps://scepterpublishers.org/products/a-plan-of-life?_pos=1&amp;_sid=79b6dfbae&amp;_ss=r\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca target=\"pdf-view\" href=\"/pdf/a-plan-of-life.pdf\"\u003e\u003cimg src=\"/images/pdf.png\" style=\"height:40px;width:35px\" /\u003e\u003c/a\u003e\u003c/p\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "Virtues"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:10.643514Z",
+    "updateTime": "2024-06-04T07:18:10.643514Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/virtue",
+    "fields": {
+      "body": {
+        "stringValue": "this is the body"
+      }
+    },
+    "createTime": "2024-06-08T17:38:32.563755Z",
+    "updateTime": "2024-06-08T17:38:32.563755Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/wLM1jCsCsWUatgWarvJm",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "coming-soon"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eComing Soon\u003c/h3\u003e\n\u003cp\u003eNothing to see here yet. Come back soon!\u003c/p\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "title": {
+        "stringValue": "Coming soon"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:03.909557Z",
+    "updateTime": "2024-06-04T07:18:03.909557Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/xWRQPW8mD52nSiKf07kj",
+    "fields": {
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "sports"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "title": {
+        "stringValue": "Sports"
+      },
+      "excerpt": {
+        "stringValue": "Sports"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eGetting Fit in Mind, Body, And Soul\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://integratedcatholiclife.org/2024/04/hain-getting-fit-in-mind-body-and-soul-2/\"\u003ehttps://integratedcatholiclife.org/2024/04/hain-getting-fit-in-mind-body-and-soul-2/\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:09.924455Z",
+    "updateTime": "2024-06-04T07:18:09.924455Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+,
+{
+  "document": {
+    "name": "projects/auxilium-420904/databases/aux-db/documents/articles/zGkasfEaQTrhbJrBD52H",
+    "fields": {
+      "coverHeight": {
+        "integerValue": "6"
+      },
+      "date": {
+        "stringValue": "2023-10-26"
+      },
+      "coverImage": {
+        "stringValue": "/images/zacchaeus.png"
+      },
+      "articleId": {
+        "stringValue": "game-reviews"
+      },
+      "coverWidth": {
+        "integerValue": "16"
+      },
+      "categories": {
+        "arrayValue": {
+          "values": [
+            {
+              "stringValue": "general"
+            },
+            {
+              "stringValue": "family"
+            }
+          ]
+        }
+      },
+      "excerpt": {
+        "stringValue": "This is an excerpt"
+      },
+      "title": {
+        "stringValue": "Game Reviews"
+      },
+      "body": {
+        "stringValue": "\u003ch3\u003eSub title\u003c/h3\u003e\n\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis \nullamcorper velit sed ullamcorper morbi tincidunt.\u003c/p\u003e\n"
+      },
+      "updated": {
+        "stringValue": "2023-10-26"
+      }
+    },
+    "createTime": "2024-06-04T07:18:05.754390Z",
+    "updateTime": "2024-06-04T07:18:05.754390Z"
+  },
+  "readTime": "2024-06-08T20:40:34.545887Z"
+}
+]

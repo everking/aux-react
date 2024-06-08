@@ -1,0 +1,1 @@
+cat all-articles.json | jq 'map(select(.document.fields.articleId.stringValue != null and .document.name != null) | {(.document.fields.articleId.stringValue): .document.name}) | add'

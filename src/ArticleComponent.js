@@ -16,6 +16,40 @@ const ArticleComponent = () => {
 
   console.log(`Article Component articleId: ${articleId}`);
 
+  const saveArticleBody = async () => {
+    console.log(`GET articleId: ${articleId}`);
+    try {
+      const documentId = article.documentId;
+      const body = article.body;
+      const documentName = article.name;
+
+      console.log(`documentId = ${documentId}`);
+      console.log(`documentName = ${documentName}`);
+
+      const response = await fetch(`https://firestore.googleapis.com/v1/${documentName}?updateMask.fieldPaths=body`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "fields": {
+            "body": {
+              "stringValue": body
+            }
+          }
+        }
+      )
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const documents = await response.json();
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }
+  }
+
   const getArticle = async (articleId) => {
     console.log(`GET articleId: ${articleId}`);
     try {
@@ -47,7 +81,8 @@ const ArticleComponent = () => {
         const fields = documents[0].document.fields;
         const articleData = {
           title: fields.title.stringValue,
-          body: fields.body.stringValue
+          body: fields.body.stringValue,
+          name: documents[0].document.name
         };
         console.log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
@@ -72,6 +107,7 @@ const ArticleComponent = () => {
   const onEditorStateChange = (newEditorState) => {
     setEditorState(newEditorState);
     article.body = draftToHtml(convertToRaw(newEditorState.getCurrentContent()));
+    console.log(`\n\narticle.body: ${article.body}`);
     setArticle(article);
   };
 
@@ -86,6 +122,12 @@ const ArticleComponent = () => {
       </div>
     )
   }
+
+  const save = () => {
+    console.log(`Save article ${JSON.stringify(article)}`);
+    saveArticleBody();
+  }
+
   const toggleEditMode = () => {
     const mode = !editMode;
     setEditMode(mode);
@@ -112,7 +154,9 @@ const ArticleComponent = () => {
           />
         ) : (<Article />)
       }
-      <button onClick={toggleEditMode}>{buttonLabel}</button>
+      <div>
+        <button onClick={toggleEditMode}>{buttonLabel}</button> | <button onClick={save}>Save</button>
+      </div>
     </div>
   );
 };
