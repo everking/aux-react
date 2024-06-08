@@ -1,9 +1,11 @@
 // src/components/MegaMenu.jsx
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MegaMenu.css';
 
 const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
   const [activeMenu, setActiveMenu] = useState(null);
+  const navigate = useNavigate();
 
   const menuData = [
     {
@@ -12,28 +14,62 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
       content: 'Home Content',
     },
     {
-      title: 'About',
-      id: 'about',
-      content: 'About Content',
-    },
-    {
-      title: 'Services',
-      id: 'services',
+      title: 'Family',
+      id: 'family',
       content: [
         {
-          title: 'Web Development',
-          id: 'services::web-development',
+          title: 'Whole Child',
+          id: 'family::whole-child',
           items: [
-            { title: 'Frontend Development', id: 'services::web-development::frontend' },
-            { title: 'Backend Development', id: 'services::web-development::backend' },
-            { title: 'Full Stack Development', id: 'services::web-development::fullstack' },
-            { title: 'Responsive Design', id: 'services::web-development::responsive' },
-            { title: 'Web Performance Optimization', id: 'services::web-development::performance' },
+            { title: 'Academic', id: 'family::whole-child::academic' },
+            { title: 'Spiritual', id: 'family::whole-child::spiritual' },
+            { title: 'Sports', id: 'family::whole-child::sports' },
+            { title: 'Culture', id: 'family::whole-child::culture' },
+            { title: 'Faith & Reason', id: 'family::whole-child::faith-reason' },
           ],
         },
-        { title: 'Mobile Development', id: 'services::mobile-development', description: 'Mobile Development Description' },
-        { title: 'SEO Services', id: 'services::seo-services', description: 'SEO Services Description' },
+        { 
+          title: 'Spiritual', id: 'family::spiritual', description: 'Spiritual',
+          items: [
+            { title: 'Biblical', id: 'family::spiritual::biblical' },
+            { title: 'Prayers', id: 'family::spiritual::prayers' },
+            { title: 'Formation', id: 'family::spiritual::formation' },
+            { title: 'Readings', id: 'family::spiritual::readings' },
+            { title: 'Catechism', id: 'family::spiritual::ccc' },
+            { title: 'Mentoring', id: 'family::spiritual::mentoring' },            
+          ]
+
+        },
+        { 
+          title: 'Activities', id: 'family::activities', description: 'Activities',
+          items: [
+            { title: 'Chat', id: 'family::activities::chat' },
+            { title: 'Field Outing', id: 'family::activities::field-outing' },
+            { title: 'Bible study', id: 'family::activities::bible-study' },
+            { title: 'Recollections', id: 'family::activities::recollections' },
+            { title: 'Study weekend', id: 'family::activities::study-weekend' },
+          ]
+        },
       ],
+    },
+    {
+      title: 'High School / College',
+      id: 'highSchool',
+      content: [
+      {
+          title: '',
+          id: 'family::sub',
+          items: [
+            { title: 'Reading List', id: 'highSchool::sub::reading-list' },
+            { title: 'Friendship clubs', id: 'highSchool::sub::fiendship-clubs' },
+            { title: 'Movie Club', id: 'highSchool::sub::movie-club' },
+            { title: 'Sports Group', id: 'highSchool::sub::sports-group' },
+            { title: 'Game Reviews', id: 'highSchool::sub::game-reviews' },
+            { title: 'Mentoring', id: 'highSchool::sub::mentoring' },
+            { title: 'Counseling', id: 'highSchool::sub::counseling' },
+          ]
+      }
+      ]
     },
     {
       title: 'Contact',
@@ -42,7 +78,22 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
     },
   ];
 
+
+  const getArticleId = (currentMenuItem) => {
+    if (currentMenuItem) {
+      if (currentMenuItem.includes("::")) {
+        const menuIdArray = currentMenuItem.split("::");
+        return menuIdArray[menuIdArray.length-1];
+      } else {
+        return currentMenuItem;
+      }
+    }  
+  }
+
+
   const handleItemClick = (id) => {
+    const articleId = getArticleId(id);
+    navigate(`/auxilium/articles/${articleId}`);
     setCurrentMenuItem(id);
   };
 
@@ -50,6 +101,7 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
     return currentMenuItem === id || currentMenuItem?.startsWith(id + '::');
   };
 
+  // menuItem.content
   return (
     <nav className="mega-menu">
       <ul className="menu">

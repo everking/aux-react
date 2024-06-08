@@ -7,12 +7,13 @@ import ArticleComponent from './ArticleComponent';
 import MegaMenu from './MegaMenu';
 function App() {
   const [currentMenuItem, setCurrentMenuItem] = useState(null);
+
   return (
     <div className="App">
-      <MegaMenu currentMenuItem={currentMenuItem} setCurrentMenuItem={setCurrentMenuItem} />
       <Router>
+        <MegaMenu currentMenuItem={currentMenuItem} setCurrentMenuItem={setCurrentMenuItem} />
         <Routes>
-          <Route path="/articles/:articleId" element={<ArticleComponent />} />
+          <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />
         </Routes>
       </Router>
       <div>Current Menu Item: {currentMenuItem}</div>

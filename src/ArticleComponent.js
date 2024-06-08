@@ -15,7 +15,7 @@ const ArticleComponent = () => {
   const [ editorState, setEditorState] = useState(EditorState.createEmpty());
   const { articleId } = useParams();
 
-  console.log(`articleId: ${articleId}`);
+  console.log(`Article Component articleId: ${articleId}`);
   
   const getArticle = async (articleId) => {
     console.log(`GET articleId: ${articleId}`);
@@ -68,7 +68,7 @@ const ArticleComponent = () => {
       console.log("useEffect");
       getArticle(articleId);
     }  
-  }, []);
+  }, [articleId]);
 
   const onEditorStateChange = (newEditorState) => {
     setEditorState(newEditorState);
