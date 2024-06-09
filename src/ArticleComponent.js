@@ -5,7 +5,7 @@ import { EditorState, convertToRaw, ContentState } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
 import htmlToDraft from 'html-to-draftjs';
 import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-
+import ArticleLookup from './ArticleLookup';
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
@@ -114,6 +114,7 @@ const ArticleComponent = () => {
   const Article = () => {
     return(
       <div>
+        <ArticleLookup />
         {
           article && (
             <div dangerouslySetInnerHTML={{ __html: article.body}} />
