@@ -3,6 +3,13 @@ import React, { useState, useRef, useEffect } from 'react';
 // Sample data from articles.json
 const articles = {
     "stories": "17auQXYhn9agczwc7PoF",
+    "doing-work-well": "uKQsRtCB3mGACUoOjdsz",
+    "being-fruitful": "EZuWxelpqDuRRinXLikj",
+    "spiritual-reading": "6jWYKHjJEWsejfsKRPO4",
+    "apostolate": "qLXCBUqLWdZ33sza4B0E",
+    "apologetics": "zQcIp2se90Jj7JUv4doL",
+    "beatitudes": "fJMUgkQVEXFOLkt1BAgf",
+    "finding-purpose": "PxXITes1tkQJ1jpvAgLf",
     "recollections": "20jJtsh2qf9gLgjgWfBH",
     "counseling": "3aV27W0bxmxN5xNyt7Bp",
     "fiendship-clubs": "6HnJrWvBBBrYqv4zOjQS",
@@ -37,11 +44,9 @@ const articles = {
     "game-reviews": "zGkasfEaQTrhbJrBD52H"
 };
 
-const ArticleLookup = () => {
+const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumentId, setSelectedDocumentId}) => {
   const [articleLookupText, setArticleLookupText] = useState('');
   const [filteredArticles, setFilteredArticles] = useState([]);
-  const [selectedArticleId, setSelectedArticleId] = useState('');
-  const [selectedDocumentId, setSelectedDocumentId] = useState('');
   const [highlightedIndex, setHighlightedIndex] = useState(0);
 
   const listRef = useRef(null);

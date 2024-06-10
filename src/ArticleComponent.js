@@ -13,7 +13,9 @@ const ArticleComponent = () => {
   const [ buttonLabel, setButtonLabel ] = useState("Edit");
   const [ editorState, setEditorState] = useState(EditorState.createEmpty());
   const { articleId } = useParams();
-
+  const [selectedArticleId, setSelectedArticleId] = useState('');
+  const [selectedDocumentId, setSelectedDocumentId] = useState('');
+  
   console.log(`Article Component articleId: ${articleId}`);
 
   const saveArticleBody = async () => {
@@ -50,6 +52,38 @@ const ArticleComponent = () => {
     }
   }
 
+  const getArticleByDocumentId = async (documentId) => {
+    console.log(`GET documentId: ${documentId}`);
+    try {
+      const response = await fetch(`https://firestore.googleapis.com/v1/projects/auxilium-420904/databases/aux-db/documents/articles/${documentId}`, {
+        method: 'GET'});
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const document = await response.json();
+      if (document !== null) {
+        const fields = document.fields;
+        const articleData = {
+          title: fields.title.stringValue,
+          body: fields.body.stringValue,
+          name: document.name,
+          documentId,
+          articleId
+        };
+        console.log(`articleData.body: ${articleData.body}`);
+        setArticle(articleData);
+        const contentBlock = htmlToDraft(articleData.body);
+        if (contentBlock) {
+          const contentState = ContentState.createFromBlockArray(contentBlock.contentBlocks);
+          setEditorState(EditorState.createWithContent(contentState));
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }    
+  }
   const getArticle = async (articleId) => {
     console.log(`GET articleId: ${articleId}`);
     try {
@@ -79,10 +113,19 @@ const ArticleComponent = () => {
       const documents = await response.json();
       if (documents.length > 0) {
         const fields = documents[0].document.fields;
+        const name = documents[0].document.name;
+        const pattern = /[^/]+$/;
+        const match = name.match(pattern);
+        let documentId = '';
+        if (match) {
+          documentId = match[0];
+        }
         const articleData = {
           title: fields.title.stringValue,
           body: fields.body.stringValue,
-          name: documents[0].document.name
+          name: documents[0].document.name,
+          documentId,
+          articleId
         };
         console.log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
@@ -96,6 +139,13 @@ const ArticleComponent = () => {
       console.error('Error fetching articles:', error);
     }
   };
+
+  useEffect(() => {
+    if (selectedDocumentId) {
+      console.log("useEffect");
+      getArticleByDocumentId(selectedDocumentId);
+    }  
+  }, [selectedDocumentId]);
 
   useEffect(() => {
     if (articleId) {
@@ -114,7 +164,12 @@ const ArticleComponent = () => {
   const Article = () => {
     return(
       <div>
-        <ArticleLookup />
+        <ArticleLookup 
+          selectedArticleId={selectedArticleId} 
+          setSelectedArticleId={setSelectedArticleId} 
+          selectedDocumentId={selectedDocumentId} 
+          setSelectedDocumentId={setSelectedDocumentId} 
+        />
         {
           article && (
             <div dangerouslySetInnerHTML={{ __html: article.body}} />
