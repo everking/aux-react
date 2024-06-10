@@ -131,6 +131,7 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
   return (
     <div>
       <input
+        className='articleLookupInput'
         type="text"
         value={articleLookupText}
         onChange={handleInputChange}
@@ -166,9 +167,8 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
         </ul>
       )}
       {selectedArticleId && (
-        <div>
-          <p>Selected Article: {selectedArticleId}</p>
-          <p>Document ID: {selectedDocumentId}</p>
+        <div className='articleMetaData'>
+          <p>Selected Article: {selectedArticleId}, Document ID: {selectedDocumentId}</p>
         </div>
       )}
     </div>

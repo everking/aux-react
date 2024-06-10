@@ -9,6 +9,7 @@ import ArticleLookup from './ArticleLookup';
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
+  const [ actionMessage, setActionMessage ] = useState(null);
   const [ editMode, setEditMode ] = useState(false);
   const [ buttonLabel, setButtonLabel ] = useState("Edit");
   const [ editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -20,6 +21,7 @@ const ArticleComponent = () => {
 
   const saveArticleBody = async () => {
     console.log(`GET articleId: ${articleId}`);
+    setActionMessage("Saving...");
     try {
       const documentId = article.documentId;
       const body = article.body;
@@ -46,7 +48,9 @@ const ArticleComponent = () => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      const documents = await response.json();
+      await response.json();
+      setActionMessage("");
+
     } catch (error) {
       console.error('Error fetching articles:', error);
     }
@@ -54,6 +58,8 @@ const ArticleComponent = () => {
 
   const getArticleByDocumentId = async (documentId) => {
     console.log(`GET documentId: ${documentId}`);
+    setActionMessage("Getting article by document id ...");
+
     try {
       const response = await fetch(`https://firestore.googleapis.com/v1/projects/auxilium-420904/databases/aux-db/documents/articles/${documentId}`, {
         method: 'GET'});
@@ -63,6 +69,8 @@ const ArticleComponent = () => {
       }
 
       const document = await response.json();
+      setActionMessage("");
+
       if (document !== null) {
         const fields = document.fields;
         const articleData = {
@@ -85,6 +93,8 @@ const ArticleComponent = () => {
     }    
   }
   const getArticle = async (articleId) => {
+    setActionMessage("Getting article by article Id ...");
+
     console.log(`GET articleId: ${articleId}`);
     try {
       const response = await fetch('https://firestore.googleapis.com/v1/projects/auxilium-420904/databases/aux-db/documents:runQuery', {
@@ -111,6 +121,8 @@ const ArticleComponent = () => {
       }
 
       const documents = await response.json();
+      setActionMessage("");
+
       if (documents.length > 0) {
         const fields = documents[0].document.fields;
         const name = documents[0].document.name;
@@ -164,12 +176,6 @@ const ArticleComponent = () => {
   const Article = () => {
     return(
       <div>
-        <ArticleLookup 
-          selectedArticleId={selectedArticleId} 
-          setSelectedArticleId={setSelectedArticleId} 
-          selectedDocumentId={selectedDocumentId} 
-          setSelectedDocumentId={setSelectedDocumentId} 
-        />
         {
           article && (
             <div dangerouslySetInnerHTML={{ __html: article.body}} />
@@ -200,6 +206,13 @@ const ArticleComponent = () => {
 
   return (
     <div className='prose'>
+      <ArticleLookup 
+        selectedArticleId={selectedArticleId} 
+        setSelectedArticleId={setSelectedArticleId} 
+        selectedDocumentId={selectedDocumentId} 
+        setSelectedDocumentId={setSelectedDocumentId} 
+      />
+      { actionMessage }
       { editMode ? (
           <Editor
           editorState={editorState}
@@ -210,7 +223,7 @@ const ArticleComponent = () => {
           />
         ) : (<Article />)
       }
-      <div>
+      <div className='actionButtons'>
         <button onClick={toggleEditMode}>{buttonLabel}</button> | <button onClick={save}>Save</button>
       </div>
     </div>

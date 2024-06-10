@@ -15,6 +15,7 @@ function App() {
         <div className='flex w-full justify-center bg-blue-200'>
           <div className='w-full max-h-full max-w-2xl bg-white p-5'>
             <Routes>
+            <Route path="/auxilium" element={<ArticleComponent />} />
             <Route path="/auxilium/articles" element={<ArticleComponent />} />
             <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />
             </Routes>

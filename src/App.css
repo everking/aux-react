@@ -82,3 +82,18 @@ input {
 .topContainer {
   max-width: 800px;
 }
+
+.actionButtons {
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
+.articleLookupInput {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.articleMetaData {
+  border-bottom: 1px solid lightgray;
+}
