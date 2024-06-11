@@ -9,6 +9,7 @@ import ArticleLookup from './ArticleLookup';
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
+  const [ title, setTitle ] = useState(null);
   const [ actionMessage, setActionMessage ] = useState(null);
   const [ editMode, setEditMode ] = useState(false);
   const [ buttonLabel, setButtonLabel ] = useState("Edit");
@@ -30,7 +31,7 @@ const ArticleComponent = () => {
       console.log(`documentId = ${documentId}`);
       console.log(`documentName = ${documentName}`);
 
-      const response = await fetch(`https://firestore.googleapis.com/v1/${documentName}?updateMask.fieldPaths=body`, {
+      const response = await fetch(`https://firestore.googleapis.com/v1/${documentName}?updateMask.fieldPaths=body&updateMask.fieldPaths=title`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
@@ -39,7 +40,10 @@ const ArticleComponent = () => {
           "fields": {
             "body": {
               "stringValue": body
-            }
+            },
+            "title": {
+              "stringValue": title
+            }     
           }
         }
       )
@@ -82,6 +86,7 @@ const ArticleComponent = () => {
         };
         console.log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
+        setTitle(articleData.title);
         const contentBlock = htmlToDraft(articleData.body);
         if (contentBlock) {
           const contentState = ContentState.createFromBlockArray(contentBlock.contentBlocks);
@@ -141,6 +146,7 @@ const ArticleComponent = () => {
         };
         console.log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
+        setTitle(articleData.title);
         const contentBlock = htmlToDraft(articleData.body);
         if (contentBlock) {
           const contentState = ContentState.createFromBlockArray(contentBlock.contentBlocks);
@@ -204,6 +210,11 @@ const ArticleComponent = () => {
     CUSTOM_FONT: { fontFamily: 'Avenir, sans-serif' },
   };
 
+  const handleInputChange = (event) => {
+    const input = event.target.value;
+    setTitle(input);
+  };
+
   return (
     <div className='prose'>
       <ArticleLookup 
@@ -213,7 +224,10 @@ const ArticleComponent = () => {
         setSelectedDocumentId={setSelectedDocumentId} 
       />
       { actionMessage }
+      
       { editMode ? (
+          <div>
+          Title <input className='titleInput' onChange={handleInputChange} value={title} />
           <Editor
           editorState={editorState}
           wrapperClassName="demo-wrapper"
@@ -221,7 +235,13 @@ const ArticleComponent = () => {
           onEditorStateChange={onEditorStateChange}
           customStyleMap={customStyleMap}
           />
-        ) : (<Article />)
+          </div>
+        ) : (
+          <div>
+          Title <div className="titleDiv">{title}</div>
+          <Article />
+          </div>
+        )
       }
       <div className='actionButtons'>
         <button onClick={toggleEditMode}>{buttonLabel}</button> | <button onClick={save}>Save</button>

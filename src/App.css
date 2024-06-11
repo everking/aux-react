@@ -94,6 +94,19 @@ input {
   padding: 10px;
 }
 
+.titleInput {
+  border: 1px solid lightgray;
+  padding: 10px;
+  font-weight: bolder;
+}
+
 .articleMetaData {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(234, 232, 232);
+  margin-bottom: 10px;
+}
+
+.titleDiv {
+  padding: 10px;
+  border: 1px solid lightgray;
+  font-weight: bolder;
 }
