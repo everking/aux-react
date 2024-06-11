@@ -9,6 +9,7 @@ import ArticleLookup from './ArticleLookup';
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
+  const [ isReady, setIsReady ] = useState(false);
   const [ title, setTitle ] = useState(null);
   const [ actionMessage, setActionMessage ] = useState(null);
   const [ editMode, setEditMode ] = useState(false);
@@ -63,6 +64,7 @@ const ArticleComponent = () => {
   const getArticleByDocumentId = async (documentId) => {
     console.log(`GET documentId: ${documentId}`);
     setActionMessage("Getting article by document id ...");
+    setIsReady(false);
 
     try {
       const response = await fetch(`https://firestore.googleapis.com/v1/projects/auxilium-420904/databases/aux-db/documents/articles/${documentId}`, {
@@ -74,6 +76,7 @@ const ArticleComponent = () => {
 
       const document = await response.json();
       setActionMessage("");
+      setIsReady(true);
 
       if (document !== null) {
         const fields = document.fields;
@@ -99,6 +102,7 @@ const ArticleComponent = () => {
   }
   const getArticle = async (articleId) => {
     setActionMessage("Getting article by article Id ...");
+    setIsReady(false);
 
     console.log(`GET articleId: ${articleId}`);
     try {
@@ -127,6 +131,7 @@ const ArticleComponent = () => {
 
       const documents = await response.json();
       setActionMessage("");
+      setIsReady(true);
 
       if (documents.length > 0) {
         const fields = documents[0].document.fields;
@@ -221,31 +226,34 @@ const ArticleComponent = () => {
         selectedArticleId={selectedArticleId} 
         setSelectedArticleId={setSelectedArticleId} 
         selectedDocumentId={selectedDocumentId} 
-        setSelectedDocumentId={setSelectedDocumentId} 
+        setSelectedDocumentId={setSelectedDocumentId}
       />
       { actionMessage }
-      
-      { editMode ? (
-          <div>
-          Title <input className='titleInput' onChange={handleInputChange} value={title} />
-          <Editor
-          editorState={editorState}
-          wrapperClassName="demo-wrapper"
-          editorClassName="demo-editor"
-          onEditorStateChange={onEditorStateChange}
-          customStyleMap={customStyleMap}
-          />
-          </div>
-        ) : (
-          <div>
-          Title <div className="titleDiv">{title}</div>
-          <Article />
-          </div>
-        )
+      { isReady ? (
+      <div>
+          { editMode ? (
+            <div>
+            Title <input className='titleInput' onChange={handleInputChange} value={title} />
+            <Editor
+            editorState={editorState}
+            wrapperClassName="demo-wrapper"
+            editorClassName="demo-editor"
+            onEditorStateChange={onEditorStateChange}
+            customStyleMap={customStyleMap}
+            />
+            </div>
+          ) : (
+            <div>
+            Title <div className="titleDiv">{title}</div>
+            <Article />
+            </div>
+          )
+        }
+        <div className='actionButtons'>
+          <button onClick={toggleEditMode}>{buttonLabel}</button> | <button onClick={save}>Save</button>
+        </div>
+      </div>) : ""
       }
-      <div className='actionButtons'>
-        <button onClick={toggleEditMode}>{buttonLabel}</button> | <button onClick={save}>Save</button>
-      </div>
     </div>
   );
 };

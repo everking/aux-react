@@ -168,7 +168,7 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
       )}
       {selectedArticleId && (
         <div className='articleMetaData'>
-          <p>Selected Article: {selectedArticleId}, Document ID: {selectedDocumentId}</p>
+          article id: {selectedArticleId}, id: {selectedDocumentId}
         </div>
       )}
     </div>
