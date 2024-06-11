@@ -8,10 +8,10 @@ import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ArticleLookup from './ArticleLookup';
 
 const ArticleComponent = () => {
-  const [ article, setArticle ] = useState(null);
+  const [ article, setArticle ] = useState<any>({});
   const [ isReady, setIsReady ] = useState(false);
-  const [ title, setTitle ] = useState(null);
-  const [ actionMessage, setActionMessage ] = useState(null);
+  const [ title, setTitle ] = useState("");
+  const [ actionMessage, setActionMessage ] = useState("");
   const [ editMode, setEditMode ] = useState(false);
   const [ buttonLabel, setButtonLabel ] = useState("Edit");
   const [ editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -25,9 +25,9 @@ const ArticleComponent = () => {
     console.log(`GET articleId: ${articleId}`);
     setActionMessage("Saving...");
     try {
-      const documentId = article.documentId;
-      const body = article.body;
-      const documentName = article.name;
+      const documentId = article?.documentId;
+      const body = article?.body;
+      const documentName = article?.name;
 
       console.log(`documentId = ${documentId}`);
       console.log(`documentName = ${documentName}`);
@@ -61,7 +61,7 @@ const ArticleComponent = () => {
     }
   }
 
-  const getArticleByDocumentId = async (documentId) => {
+  const getArticleByDocumentId = async (documentId:string) => {
     console.log(`GET documentId: ${documentId}`);
     setActionMessage("Getting article by document id ...");
     setIsReady(false);
@@ -100,7 +100,7 @@ const ArticleComponent = () => {
       console.error('Error fetching articles:', error);
     }    
   }
-  const getArticle = async (articleId) => {
+  const getArticle = async (articleId:string) => {
     setActionMessage("Getting article by article Id ...");
     setIsReady(false);
 
@@ -177,7 +177,7 @@ const ArticleComponent = () => {
     }  
   }, [articleId]);
 
-  const onEditorStateChange = (newEditorState) => {
+  const onEditorStateChange = (newEditorState:any) => {
     setEditorState(newEditorState);
     article.body = draftToHtml(convertToRaw(newEditorState.getCurrentContent()));
     console.log(`\n\narticle.body: ${article.body}`);
@@ -215,7 +215,7 @@ const ArticleComponent = () => {
     CUSTOM_FONT: { fontFamily: 'Avenir, sans-serif' },
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event:any) => {
     const input = event.target.value;
     setTitle(input);
   };

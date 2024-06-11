@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MegaMenu.css';
 
-const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
+const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }: any) => {
   const [activeMenu, setActiveMenu] = useState(null);
   const navigate = useNavigate();
 
@@ -79,7 +79,7 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
   ];
 
 
-  const getArticleId = (currentMenuItem) => {
+  const getArticleId = (currentMenuItem:any) => {
     if (currentMenuItem) {
       if (currentMenuItem.includes("::")) {
         const menuIdArray = currentMenuItem.split("::");
@@ -91,21 +91,21 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
   }
 
 
-  const handleItemClick = (id) => {
+  const handleItemClick = (id:any) => {
     const articleId = getArticleId(id);
     navigate(`/auxilium/articles/${articleId}`);
     setCurrentMenuItem(id);
   };
 
-  const isItemActive = (id) => {
+  const isItemActive = (id:any) => {
     return currentMenuItem === id || currentMenuItem?.startsWith(id + '::');
   };
 
   // menuItem.content
   return (
-    <nav className="mega-menu">
-      <ul className="menu">
-        {menuData.map((menuItem, index) => (
+    <nav className='mega-menu'>
+      <ul className='menu'>
+        {menuData.map((menuItem:any, index:any) => (
           <li
             key={index}
             id={menuItem.id}
@@ -119,7 +119,7 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
               <div className="mega-menu-content">
                 {Array.isArray(menuItem.content) ? (
                   <div className="submenu">
-                    {menuItem.content.map((subItem, subIndex) => (
+                    {menuItem.content.map((subItem:any, subIndex:any) => (
                       <div
                         key={subIndex}
                         id={subItem.id}
@@ -132,7 +132,7 @@ const MegaMenu = ({ currentMenuItem, setCurrentMenuItem }) => {
                         <h4>{subItem.title}</h4>
                         {subItem.items ? (
                           <div className="subsubmenu">
-                            {subItem.items.map((item, itemIndex) => (
+                            {subItem.items.map((item:any, itemIndex:any) => (
                               <div
                                 key={itemIndex}
                                 id={item.id}

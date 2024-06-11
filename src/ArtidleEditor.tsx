@@ -8,15 +8,15 @@ const ArtidleEditor = () => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabChange = (event, newValue) => {
+  const handleTabChange = (event:any, newValue:any) => {
     setActiveTab(newValue);
   };
 
-  const handleEditorChange = newState => {
+  const handleEditorChange = (newState:any) => {
     setEditorState(newState);
   };
 
-  const handleKeyCommand = command => {
+  const handleKeyCommand = (command:any) => {
     const newState = RichUtils.handleKeyCommand(editorState, command);
     if (newState) {
       handleEditorChange(newState);
@@ -25,7 +25,7 @@ const ArtidleEditor = () => {
     return 'not-handled';
   };
 
-  const toggleInlineStyle = inlineStyle => {
+  const toggleInlineStyle = (inlineStyle:any) => {
     handleEditorChange(RichUtils.toggleInlineStyle(editorState, inlineStyle));
   };
 
@@ -33,7 +33,7 @@ const ArtidleEditor = () => {
     const contentState = editorState.getCurrentContent();
     const html = contentState
       .getBlockMap()
-      .map(block => block.getText())
+      .map((block:any) => block.getText())
       .join('<br/>');
     return { __html: html };
   };

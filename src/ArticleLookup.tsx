@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 // Sample data from articles.json
-const articles = {
+const articles:any = {
     "stories": "17auQXYhn9agczwc7PoF",
     "doing-work-well": "uKQsRtCB3mGACUoOjdsz",
     "being-fruitful": "EZuWxelpqDuRRinXLikj",
@@ -44,20 +44,20 @@ const articles = {
     "game-reviews": "zGkasfEaQTrhbJrBD52H"
 };
 
-const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumentId, setSelectedDocumentId}) => {
+const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumentId, setSelectedDocumentId}:any) => {
   const [articleLookupText, setArticleLookupText] = useState('');
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
 
-  const listRef = useRef(null);
-  const itemRefs = useRef([]);
+  const listRef:any = useRef(null);
+  const itemRefs:any = useRef([]);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event:any) => {
     const input = event.target.value;
     setArticleLookupText(input);
 
     if (input) {
-      const filtered = Object.keys(articles).filter(key =>
+      const filtered:any = Object.keys(articles).filter(key =>
         key.toLowerCase().includes(input.toLowerCase())
       );
       setFilteredArticles(filtered);
@@ -67,7 +67,7 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
     }
   };
 
-  const handleSuggestionClick = (key) => {
+  const handleSuggestionClick = (key:any) => {
     setArticleLookupText(key);
     setSelectedArticleId(key);
     setSelectedDocumentId(articles[key]);
@@ -75,10 +75,10 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
     setHighlightedIndex(0);
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event:any) => {
     if (event.key === 'ArrowDown') {
       if (filteredArticles.length === 0 && articleLookupText === '') {
-        const allArticles = Object.keys(articles);
+        const allArticles:any = Object.keys(articles);
         setFilteredArticles(allArticles);
         setHighlightedIndex(0);
       } else {
@@ -107,7 +107,7 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
     }
   };
 
-  const scrollToItem = (index) => {
+  const scrollToItem = (index:any) => {
     if (itemRefs.current[index] && listRef.current) {
       const item = itemRefs.current[index];
       const list = listRef.current;

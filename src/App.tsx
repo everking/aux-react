@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 import ArticleComponent from './ArticleComponent';
 import MegaMenu from './MegaMenu';
