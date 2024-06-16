@@ -167,7 +167,8 @@ const ArticleComponent = () => {
     if (selectedDocumentId) {
       console.log("useEffect");
       getArticleByDocumentId(selectedDocumentId);
-    }  
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedDocumentId]);
 
   useEffect(() => {
