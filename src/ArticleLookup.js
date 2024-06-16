@@ -107,23 +107,6 @@ const ArticleLookup = ({selectedArticleId, setSelectedArticleId, selectedDocumen
     }
   };
 
-  const scrollToItem = (index) => {
-    if (itemRefs.current[index] && listRef.current) {
-      const item = itemRefs.current[index];
-      const list = listRef.current;
-      const itemTop = item.offsetTop;
-      const itemBottom = itemTop + item.offsetHeight;
-      const listTop = list.scrollTop;
-      const listBottom = listTop + list.clientHeight;
-
-      if (itemBottom > listBottom) {
-        list.scrollTop = itemBottom - list.clientHeight;
-      } else if (itemTop < listTop) {
-        list.scrollTop = itemTop;
-      }
-    }
-  };
-
   useEffect(() => {
     itemRefs.current = itemRefs.current.slice(0, filteredArticles.length);
   }, [filteredArticles]);
