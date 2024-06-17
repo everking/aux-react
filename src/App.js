@@ -7,6 +7,7 @@ import MegaMenu from './MegaMenu';
 import Signup from "./Signup";
 import Login from "./Login";
 import Home from "./Home";
+import AuthHandler from './AuthHandler';
 import PrivateRoute from "./PrivateRoute";
 import { AuthProvider } from "./AuthContext";
 
@@ -24,6 +25,8 @@ function App() {
             <Route path="/auxilium/articles/home" element={<PrivateRoute><Home /></PrivateRoute>} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/auth" element={<AuthHandler />} />
+            <Route path="/" element={<ArticleComponent />} />
             <Route path="/auxilium" element={<ArticleComponent />} />
             <Route path="/auxilium/articles" element={<ArticleComponent />} />
             <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />

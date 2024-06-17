@@ -1,60 +1,37 @@
-// Signup.js
-import React, { useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "./AuthContext";
+import React, { useState } from 'react';
+import firebaseAuth from './firebaseAuth';
+import { useNavigate } from 'react-router-dom';
 
-export default function Signup() {
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const passwordConfirmRef = useRef();
-  const { signup } = useAuth();
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+const Signup = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  async function handleSubmit(e) {
+  const handleSignup = async (e) => {
     e.preventDefault();
-
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match");
-    }
-
     try {
-      setError("");
-      setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
-      navigate("/");
-    } catch (err) {
-      setError(err.message);
+      const user = await firebaseAuth.signUp(email, password);
+      if (user.idToken) {
+        localStorage.setItem('user', JSON.stringify(user));
+        navigate('/');
+      } else {
+        console.error('Error during signup:', user);
+      }
+    } catch (error) {
+      console.error('Error during signup:', error);
     }
-
-    setLoading(false);
-  }
+  };
 
   return (
     <div>
-      <h2>Sign Up</h2>
-      {error && <alert>{error}</alert>}
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email</label>
-          <input type="email" ref={emailRef} required />
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" ref={passwordRef} required />
-        </div>
-        <div>
-          <label>Password Confirmation</label>
-          <input type="password" ref={passwordConfirmRef} required />
-        </div>
-        <button disabled={loading} type="submit">
-          Sign Up
-        </button>
+      <h2>Signup</h2>
+      <form onSubmit={handleSignup}>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+        <button type="submit">Signup</button>
       </form>
-      <div>
-        Already have an account? <Link to="/login">Log In</Link>
-      </div>
     </div>
   );
-}
+};
+
+export default Signup;

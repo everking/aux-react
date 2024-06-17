@@ -1,51 +1,39 @@
-// Login.js
-import React, { useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "./AuthContext";
+import React, { useState } from 'react';
+import firebaseAuth from './firebaseAuth';
+import { useNavigate } from 'react-router-dom';
+import GoogleLogin from './GoogleLogin';
 
-export default function Login() {
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const { login } = useAuth();
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  async function handleSubmit(e) {
+  const handleLogin = async (e) => {
     e.preventDefault();
-
     try {
-      setError("");
-      setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
-      navigate("/");
-    } catch (err) {
-      setError(err.message);
+      const user = await firebaseAuth.login(email, password);
+      if (user.idToken) {
+        localStorage.setItem('user', JSON.stringify(user));
+        navigate('/');
+      } else {
+        console.error('Error during login:', user);
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
     }
-
-    setLoading(false);
-  }
+  };
 
   return (
     <div>
-      <h2>Log In</h2>
-      {error && <alert>{error}</alert>}
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email</label>
-          <input type="email" ref={emailRef} required />
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" ref={passwordRef} required />
-        </div>
-        <button disabled={loading} type="submit">
-          Log In
-        </button>
+      <h2>Login</h2>
+      <form onSubmit={handleLogin}>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+        <button type="submit">Login</button>
       </form>
-      <div>
-        Need an account? <Link to="/signup">Sign Up</Link>
-      </div>
+      <GoogleLogin />
     </div>
   );
-}
+};
+
+export default Login;

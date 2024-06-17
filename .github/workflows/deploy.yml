@@ -24,6 +24,7 @@ jobs:
     - name: Build the React app
       env:
         REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
+        REACT_APP_FIREBASE_CLIENT_ID: ${{ secrets.REACT_APP_FIREBASE_CLIENT_ID }}
       run: npm run build
 
     - name: Deploy to GitHub Pages
