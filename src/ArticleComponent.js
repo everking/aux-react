@@ -7,7 +7,7 @@ import htmlToDraft from 'html-to-draftjs';
 import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ArticleLookup from './ArticleLookup';
 import { useNavigate } from 'react-router-dom';
-
+import { log } from './tools';
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
@@ -27,29 +27,29 @@ const ArticleComponent = () => {
     let hashParams = window.location.hash;
 
     if (queryString) {
-      console.log(`queryString: ${queryString}`);
-      console.log(`hashParams: ${hashParams}`);
+      log(`queryString: ${queryString}`);
+      log(`hashParams: ${hashParams}`);
       if (queryString.substring(1).startsWith("/")) {
         let navigatePath = queryString.substring(2); // remove first '/'
-        console.log(`navigatePath: ${navigatePath}${hashParams}`);
+        log(`navigatePath: ${navigatePath}${hashParams}`);
         navigate(`/auxilium/${navigatePath}${hashParams}`);
       }
     }
   });
 
 
-  console.log(`Article Component articleId: ${articleId}`);
+  log(`Article Component articleId: ${articleId}`);
 
   const saveArticleBody = async () => {
-    console.log(`GET articleId: ${articleId}`);
+    log(`GET articleId: ${articleId}`);
     setActionMessage("Saving...");
     try {
       const documentId = article.documentId;
       const body = article.body;
       const documentName = article.name;
 
-      console.log(`documentId = ${documentId}`);
-      console.log(`documentName = ${documentName}`);
+      log(`documentId = ${documentId}`);
+      log(`documentName = ${documentName}`);
 
       const response = await fetch(`https://firestore.googleapis.com/v1/${documentName}?updateMask.fieldPaths=body&updateMask.fieldPaths=title`, {
         method: 'PATCH',
@@ -81,7 +81,7 @@ const ArticleComponent = () => {
   }
 
   const getArticleByDocumentId = async (documentId) => {
-    console.log(`GET documentId: ${documentId}`);
+    log(`GET documentId: ${documentId}`);
     setActionMessage("Getting article by document id ...");
     setIsReady(false);
 
@@ -106,7 +106,7 @@ const ArticleComponent = () => {
           documentId,
           articleId
         };
-        console.log(`articleData.body: ${articleData.body}`);
+        log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
         setTitle(articleData.title);
         const contentBlock = htmlToDraft(articleData.body);
@@ -123,7 +123,7 @@ const ArticleComponent = () => {
     setActionMessage("Getting article by article Id ...");
     setIsReady(false);
 
-    console.log(`GET articleId: ${articleId}`);
+    log(`GET articleId: ${articleId}`);
     try {
       const response = await fetch('https://firestore.googleapis.com/v1/projects/auxilium-420904/databases/aux-db/documents:runQuery', {
         method: 'POST',
@@ -168,7 +168,7 @@ const ArticleComponent = () => {
           documentId,
           articleId
         };
-        console.log(`articleData.body: ${articleData.body}`);
+        log(`articleData.body: ${articleData.body}`);
         setArticle(articleData);
         setTitle(articleData.title);
         const contentBlock = htmlToDraft(articleData.body);
@@ -184,7 +184,6 @@ const ArticleComponent = () => {
 
   useEffect(() => {
     if (selectedDocumentId) {
-      console.log("useEffect");
       getArticleByDocumentId(selectedDocumentId);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -192,7 +191,6 @@ const ArticleComponent = () => {
 
   useEffect(() => {
     if (articleId) {
-      console.log("useEffect");
       getArticle(articleId);
     }  
   }, [articleId]);
@@ -200,7 +198,7 @@ const ArticleComponent = () => {
   const onEditorStateChange = (newEditorState) => {
     setEditorState(newEditorState);
     article.body = draftToHtml(convertToRaw(newEditorState.getCurrentContent()));
-    console.log(`\n\narticle.body: ${article.body}`);
+    log(`\n\narticle.body: ${article.body}`);
     setArticle(article);
   };
 
@@ -217,7 +215,7 @@ const ArticleComponent = () => {
   }
 
   const save = () => {
-    console.log(`Save article ${JSON.stringify(article)}`);
+    log(`Save article ${JSON.stringify(article)}`);
     saveArticleBody();
   }
 
