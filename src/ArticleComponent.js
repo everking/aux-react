@@ -24,12 +24,15 @@ const ArticleComponent = () => {
   const navigate = useNavigate();
   useEffect(() => {
     let queryString = window.location.search;
+    let hashParams = window.location.hash;
+
     if (queryString) {
       console.log(`queryString: ${queryString}`);
+      console.log(`hashParams: ${hashParams}`);
       if (queryString.substring(1).startsWith("/")) {
         let navigatePath = queryString.substring(2); // remove first '/'
-        console.log(`navigatePath: ${navigatePath}`);
-        navigate(`/auxilium/${navigatePath}`);
+        console.log(`navigatePath: ${navigatePath}${hashParams}`);
+        navigate(`/auxilium/${navigatePath}${hashParams}`);
       }
     }
   });
