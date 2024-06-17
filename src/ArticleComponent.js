@@ -6,6 +6,8 @@ import draftToHtml from 'draftjs-to-html';
 import htmlToDraft from 'html-to-draftjs';
 import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import ArticleLookup from './ArticleLookup';
+import { useNavigate } from 'react-router-dom';
+
 
 const ArticleComponent = () => {
   const [ article, setArticle ] = useState(null);
@@ -19,6 +21,20 @@ const ArticleComponent = () => {
   const [selectedArticleId, setSelectedArticleId] = useState('');
   const [selectedDocumentId, setSelectedDocumentId] = useState('');
   
+  const navigate = useNavigate();
+  useEffect(() => {
+    let queryString = window.location.search;
+    if (queryString) {
+      console.log(`queryString: ${queryString}`);
+      if (queryString.substring(1).startsWith("/")) {
+        let navigatePath = queryString.substring(2); // remove first '/'
+        console.log(`navigatePath: ${navigatePath}`);
+        navigate(`/auxilium/${navigatePath}`);
+      }
+    }
+  });
+
+
   console.log(`Article Component articleId: ${articleId}`);
 
   const saveArticleBody = async () => {
