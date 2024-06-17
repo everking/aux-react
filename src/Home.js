@@ -10,7 +10,7 @@ export default function Home() {
   async function handleLogout() {
     try {
       await logout();
-      navigate("/login");
+      navigate("/auxilium/login");
     } catch {
       console.log("Failed to log out");
     }

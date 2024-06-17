@@ -23,10 +23,9 @@ function App() {
           <div className='w-full max-h-full max-w-2xl bg-white p-5'>
             <Routes>
             <Route path="/auxilium/articles/home" element={<PrivateRoute><Home /></PrivateRoute>} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/auth" element={<AuthHandler />} />
-            <Route path="/" element={<ArticleComponent />} />
+            <Route path="/auxilium/signup" element={<Signup />} />
+            <Route path="/auxilium/login" element={<Login />} />
+            <Route path="/auxilium/auth" element={<AuthHandler />} />
             <Route path="/auxilium" element={<ArticleComponent />} />
             <Route path="/auxilium/articles" element={<ArticleComponent />} />
             <Route path="/auxilium/articles/:articleId" element={<ArticleComponent />} />

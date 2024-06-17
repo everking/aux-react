@@ -3,7 +3,7 @@ import React from 'react';
 const GoogleLogin = () => {
   const handleGoogleLogin = () => {
     const clientId = process.env.REACT_APP_FIREBASE_CLIENT_ID;
-    const redirectUri = window.location.origin + '/auth';
+    const redirectUri = window.location.origin + '/auxilium/auth';
     const scope = 'email profile openid';
     const responseType = 'token id_token';
 
